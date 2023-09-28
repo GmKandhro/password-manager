@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="text-gray-600 bg-red body-font">
+        <div class="container mx-auto bg-red flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            
+            <span class="ml-3 text-xl">Password manager</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">About</a>
+          </nav>
+          
+        </div>
+      </header>
+
+
+      <!-- inputs section  -->
+
+      <section class="text-gray-600 body-font mt-2">
+       
+          <div class="lg:w-[80%] mx-auto md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">PM Form</h2>
+            <div class="relative mb-4">
+              <label for="website-name" class="leading-7 text-sm text-gray-600">Website name</label>
+              <input type="text" id="website-name" value="" name="website-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="userName" class="leading-7 text-sm text-gray-600">userName</label>
+              <input type="text" id="userName" name="userName" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="password class="leading-7 text-sm text-gray-600">Password</label>
+              <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button id="saveBtn" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Save</button>
+          
+          </div>
+        </div>
+      </section>
+      <div class="w-full flex justify-center items-center">
+
+        <section id="card" class="w-[80%] h-[60vh] overflow-scroll  mt-5 flex justify-center items-center flex-wrap  ">
+         
+        </section>
+      </div>
+      
+</body>
+<script src="./app.js"></script>
+</html>
