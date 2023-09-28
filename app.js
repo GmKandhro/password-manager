@@ -9,17 +9,18 @@ const passwordInput = document.querySelector('#password');
 function togglePasswordVisibility(index) {
   const passwordElement = document.getElementById(`password-${index}`);
   const eyeIcon = document.querySelector(`.toggle-eye:nth-child(${index + 1})`);
-
+  
+  let toggleEye = document.querySelector(`.toggle-eye${index}`)
   if (passwordElement.classList.contains("visible")) {
     passwordElement.textContent = "*".repeat(passwordElement.textContent.length);
     passwordElement.classList.remove("visible");
-    eyeIcon.classList.remove("fa-eye-slash");
-    eyeIcon.classList.add("fa-eye");
+    toggleEye.classList.remove("fa-eye-slash");
+    toggleEye.classList.add("fa-eye");
   } else {
     passwordElement.textContent = passwordElement.dataset.originalPassword;
     passwordElement.classList.add("visible");
-    eyeIcon.classList.remove("fa-eye");
-    eyeIcon.classList.add("fa-eye-slash");
+    toggleEye.classList.remove("fa-eye");
+    toggleEye.classList.add("fa-eye-slash");
   }
 }
 
